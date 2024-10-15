@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/88b67f70d86d46318734a26ad6f1c70f/artifacts
+end_time: 1728974807245
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 88b67f70d86d46318734a26ad6f1c70f
+run_name: unruly-skink-922
+run_uuid: 88b67f70d86d46318734a26ad6f1c70f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728974807001
+status: 3
+tags: []
+user_id: sprakash90

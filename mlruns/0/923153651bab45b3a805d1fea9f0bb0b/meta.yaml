@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/923153651bab45b3a805d1fea9f0bb0b/artifacts
+end_time: 1728974926414
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 923153651bab45b3a805d1fea9f0bb0b
+run_name: bedecked-cat-12
+run_uuid: 923153651bab45b3a805d1fea9f0bb0b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728974926295
+status: 3
+tags: []
+user_id: sprakash90
