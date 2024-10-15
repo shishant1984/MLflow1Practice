@@ -48,8 +48,5 @@ with mlflow.start_run(): # Its to tell what all to log by mlflow
     plt.savefig('Confusion_matrix.png') # Save plot as artifact
     mlflow.log_artifact("Confusion_matrix.png") # log artifacts with path to file
     mlflow.log_artifact(__file__) # log this code file as well
-    mlflow.sklearn.log_model(irisdt,'Iris Decision Tree') # log model .
-    mlflow.set_tag('CreatedBY','Shishant') # Tags for searching when lot of runs in place
-    mlflow.set_tag('AlgoUsed','DecisionTree')
 
     print(accuracy)    

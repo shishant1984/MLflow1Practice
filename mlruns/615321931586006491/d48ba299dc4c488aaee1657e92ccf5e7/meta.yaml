@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/615321931586006491/d48ba299dc4c488aaee1657e92ccf5e7/artifacts
+end_time: 1728996608858
+entry_point_name: ''
+experiment_id: '615321931586006491'
+lifecycle_stage: active
+run_id: d48ba299dc4c488aaee1657e92ccf5e7
+run_name: enthused-sow-294
+run_uuid: d48ba299dc4c488aaee1657e92ccf5e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728996607762
+status: 3
+tags: []
+user_id: sprakash90

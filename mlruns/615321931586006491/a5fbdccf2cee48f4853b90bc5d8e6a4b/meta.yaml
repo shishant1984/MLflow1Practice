@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/615321931586006491/a5fbdccf2cee48f4853b90bc5d8e6a4b/artifacts
+end_time: 1728996896522
+entry_point_name: ''
+experiment_id: '615321931586006491'
+lifecycle_stage: active
+run_id: a5fbdccf2cee48f4853b90bc5d8e6a4b
+run_name: illustrious-hawk-831
+run_uuid: a5fbdccf2cee48f4853b90bc5d8e6a4b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728996884533
+status: 3
+tags: []
+user_id: sprakash90
