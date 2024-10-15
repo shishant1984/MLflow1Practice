@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/615321931586006491/c0f6ddc7fa75477a86c88f3ab4882cb3/artifacts
+end_time: 1728987410338
+entry_point_name: ''
+experiment_id: '615321931586006491'
+lifecycle_stage: active
+run_id: c0f6ddc7fa75477a86c88f3ab4882cb3
+run_name: delightful-loon-511
+run_uuid: c0f6ddc7fa75477a86c88f3ab4882cb3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728987409762
+status: 3
+tags: []
+user_id: sprakash90

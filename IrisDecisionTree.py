@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
+mlflow.set_tracking_uri('http://localhost:5000') # Setting up mlflow tracking server locally
 #Load Iris dataset
 iris = load_iris()
 X = iris.data
@@ -33,8 +33,19 @@ with mlflow.start_run(): # Its to tell what all to log by mlflow
 
     accuracy = accuracy_score(y_test,y_pred)
     # This is logging code 
-    mlflow.log_metric('accuracy',accuracy) 
-    mlflow.log_param('max_depth',max_depth)
+    mlflow.log_metric('accuracy',accuracy) #log metric
+    mlflow.log_param('max_depth',max_depth) # log parameters
+    # You can track code , model , artifacts as well
    
-    print(accuracy)
-    
+   #Create coonfusion matrix
+    cm= confusion_matrix(y_test,y_pred)
+    plt.figure(figsize=(6,6))
+    sns.heatmap(cm,annot=True,fmt='d',cmap='Blues' ,xticklabels=iris.target_names,yticklabels=iris.target_names)
+    plt.ylabel('Actual')
+    plt.xlabel('Predicted')
+    plt.title('Confusion Matric')
+
+    plt.savefig('Confusion_matrix.png') # Save plot as artifact
+    mlflow.log_artifact("Confusion_matrix.png") # log artifacts with path to file
+
+    print(accuracy)    

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/615321931586006491/304ba858402647abb961c3716d0221c2/artifacts
+end_time: 1728987324558
+entry_point_name: ''
+experiment_id: '615321931586006491'
+lifecycle_stage: active
+run_id: 304ba858402647abb961c3716d0221c2
+run_name: secretive-cow-757
+run_uuid: 304ba858402647abb961c3716d0221c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728987323885
+status: 4
+tags: []
+user_id: sprakash90

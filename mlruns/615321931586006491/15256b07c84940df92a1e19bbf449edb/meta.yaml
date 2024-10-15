@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/615321931586006491/15256b07c84940df92a1e19bbf449edb/artifacts
+end_time: 1728986526422
+entry_point_name: ''
+experiment_id: '615321931586006491'
+lifecycle_stage: active
+run_id: 15256b07c84940df92a1e19bbf449edb
+run_name: hilarious-auk-470
+run_uuid: 15256b07c84940df92a1e19bbf449edb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728986525040
+status: 4
+tags: []
+user_id: sprakash90

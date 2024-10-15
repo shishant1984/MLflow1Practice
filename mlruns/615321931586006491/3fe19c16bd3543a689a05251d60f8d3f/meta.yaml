@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/615321931586006491/3fe19c16bd3543a689a05251d60f8d3f/artifacts
+end_time: 1728987224888
+entry_point_name: ''
+experiment_id: '615321931586006491'
+lifecycle_stage: active
+run_id: 3fe19c16bd3543a689a05251d60f8d3f
+run_name: casual-doe-790
+run_uuid: 3fe19c16bd3543a689a05251d60f8d3f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728987223808
+status: 4
+tags: []
+user_id: sprakash90
