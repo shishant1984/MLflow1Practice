@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/59c6b1264a284432966700fdf79195cf/artifacts
+deleted_time: 1728980461161
+end_time: 1728980338034
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 59c6b1264a284432966700fdf79195cf
+run_name: bemused-turtle-250
+run_uuid: 59c6b1264a284432966700fdf79195cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728980337917
+status: 3
+tags: []
+user_id: sprakash90

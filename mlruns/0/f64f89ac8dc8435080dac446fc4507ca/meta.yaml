@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/f64f89ac8dc8435080dac446fc4507ca/artifacts
+deleted_time: 1728980461160
+end_time: 1728980404531
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: f64f89ac8dc8435080dac446fc4507ca
+run_name: defiant-sloth-872
+run_uuid: f64f89ac8dc8435080dac446fc4507ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728980404442
+status: 3
+tags: []
+user_id: sprakash90
