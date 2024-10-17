@@ -1,0 +1,10 @@
+digest: '86447323'
+name: dataset
+profile: '{"num_rows": 30, "num_elements": 120}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "sepal.length", "required":
+  true}, {"type": "double", "name": "sepal.width", "required": true}, {"type": "double",
+  "name": "petal.length", "required": true}, {"type": "double", "name": "petal.width",
+  "required": true}]}'
+source: '{"tags": {"mlflow.user": "sprakash90", "mlflow.source.name": ".\\IrisDecisiontree_autologging.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "221dd0170d4fa2cc85feab56ccd9959edf8016c3"}}'
+source_type: code

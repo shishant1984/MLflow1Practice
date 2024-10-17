@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
-
+import mlflow
 
 mlflow.set_tracking_uri('http://localhost:5000') # Setting up mlflow tracking server locally
 #Load Iris dataset
@@ -22,6 +22,7 @@ X_train,X_test,y_train,y_test = train_test_split(X, y, test_size=.2 ,random_stat
 max_depth = 15
 
 #apply mlflow
+mlflow.autolog() # For autologging
 mlflow.set_experiment('IrisDecisionTree') # naming experiment
 
 with mlflow.start_run(): # Its to tell what all to log by mlflow
@@ -43,25 +44,25 @@ with mlflow.start_run(): # Its to tell what all to log by mlflow
     plt.xlabel('Predicted')
     plt.title('Confusion Matric')
 
-    plt.savefig('Confusion_matrix.png') # Save plot as artifact
-    mlflow.log_artifact("Confusion_matrix.png") # log artifacts with path to file
-    mlflow.log_artifact(__file__) # log this code file as well
-    mlflow.sklearn.log_model(irisdt,'Iris Decision Tree') # log model .
-    mlflow.set_tag('CreatedBY','Shishant') # Tags for searching when lot of runs in place
+    # plt.savefig('Confusion_matrix.png') # Save plot as artifact using autologging
+    # mlflow.log_artifact("Confusion_matrix.png") # log artifacts with path to file using autologging
+    mlflow.log_artifact(__file__) # log this code file as well as autolog dont log it
+    #mlflow.sklearn.log_model(irisdt,'Iris Decision Tree') # log model .
+    mlflow.set_tag('CreatedBY','Shishant') # Tags for searching when lot of runs in place.Autolog dont log it 
     mlflow.set_tag('AlgoUsed','DecisionTree')
 
-    #Log input dataset
+    #Log input dataset by autologging
 
-    traindf=X_train
-    traindf['variety']=y_train
+    # traindf=X_train
+    # traindf['variety']=y_train
 
-    testdf=X_test
-    testdf['variety']=y_test
+    # testdf=X_test
+    # testdf['variety']=y_test
 
-    traindf = mlflow.data.from_pandas(traindf)
-    testdf = mlflow.data.from_pandas(testdf)
+    # traindf = mlflow.data.from_pandas(traindf)
+    # testdf = mlflow.data.from_pandas(testdf)
 
-    mlflow.log_input(traindf,context='train dataset')
-    mlflow.log_input(testdf,context='test dataset')
+    # mlflow.log_input(traindf,context='train dataset')
+    # mlflow.log_input(testdf,context='test dataset')
 
     print(accuracy)    
