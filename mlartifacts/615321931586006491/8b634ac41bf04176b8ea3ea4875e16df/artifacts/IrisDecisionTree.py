@@ -6,13 +6,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pandas as pd
 
 mlflow.set_tracking_uri('http://localhost:5000') # Setting up mlflow tracking server locally
 #Load Iris dataset
-iris = pd.read_csv('https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv')
-X = iris.iloc[:,0:-1]
-y = iris.iloc[:,-1]
+iris = load_iris()
+X = iris.data
+y = iris.target
 
 
 #Split data
@@ -41,7 +40,7 @@ with mlflow.start_run(): # Its to tell what all to log by mlflow
    #Create coonfusion matrix
     cm= confusion_matrix(y_test,y_pred)
     plt.figure(figsize=(6,6))
-    sns.heatmap(cm,annot=True,fmt='d',cmap='Blues' )
+    sns.heatmap(cm,annot=True,fmt='d',cmap='Blues' ,xticklabels=iris.target_names,yticklabels=iris.target_names)
     plt.ylabel('Actual')
     plt.xlabel('Predicted')
     plt.title('Confusion Matric')
@@ -52,19 +51,5 @@ with mlflow.start_run(): # Its to tell what all to log by mlflow
     mlflow.sklearn.log_model(irisdt,'Iris Decision Tree') # log model .
     mlflow.set_tag('CreatedBY','Shishant') # Tags for searching when lot of runs in place
     mlflow.set_tag('AlgoUsed','DecisionTree')
-
-    #Log input dataset
-
-    traindf=X_train
-    traindf['variety']=y_train
-
-    testdf=X_test
-    testdf['variety']=y_test
-
-    traindf = mlflow.data.from_pandas(traindf)
-    testdf = mlflow.data.from_pandas(testdf)
-
-    mlflow.log_input(traindf,context='train dataset')
-    mlflow.log_input(testdf,context='test dataset')
 
     print(accuracy)    

@@ -1,0 +1,20 @@
+artifact_path: Iris Decision Tree
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.17.0
+model_size_bytes: 2811
+model_uuid: 6c250ff876df4676aabc59be1a992e2d
+run_id: b1c70e440eb646aba1a37d67f6d4f0a8
+utc_time_created: '2024-10-17 07:57:38.384354'
